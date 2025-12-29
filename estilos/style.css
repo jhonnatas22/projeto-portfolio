@@ -47,7 +47,7 @@ nav#menu ul {
 
 nav#menu a {
   text-decoration: none;
-  color: var(--destaque-inverso);
+  color: var(--texto-inverso);
   font-weight: 600;
   padding: 12px 15px;
   border-radius: 5px;
@@ -98,7 +98,7 @@ div#social {
   justify-content: center;
   align-items: center;
   font-size: 1.6em;
-  gap: 1em;
+  gap: 15px;
   margin-top: 15px;
 }
 
@@ -141,4 +141,39 @@ article h2 {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skill-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skill-container .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skill-container .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+#skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
 }
